@@ -1,9 +1,8 @@
-use primes::{Sieve, PrimeSet};
+use arun_euler_lib::primes;
 
 
 fn main() {
-    let n: u64 = 600851475143;
-    let mut pset = Sieve::new();
-    let maxprime: u64 = pset.iter().take_while(move |x| x * x < n).filter(|x| n % x == 0).max().unwrap();
+    let n: usize = 600851475143;
+    let maxprime = primes::gen_primes(n).filter(|x| n % x == 0).max().unwrap();
     println!("{}", maxprime);
 }
