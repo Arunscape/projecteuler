@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "_3",
+  "arun_euler_lib",
+]
