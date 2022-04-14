@@ -1,4 +1,5 @@
 pub mod primes;
+pub mod sqrt;
 
 #[cfg(test)]
 mod tests {
