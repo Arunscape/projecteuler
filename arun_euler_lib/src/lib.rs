@@ -1,5 +1,6 @@
 pub mod primes;
 pub mod sqrt;
+pub mod triangular;
 
 #[cfg(test)]
 mod tests {

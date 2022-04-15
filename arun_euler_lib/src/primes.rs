@@ -5,7 +5,7 @@ pub fn gen_primes(n: usize) -> impl Iterator<Item = usize> {
         Vec::new()
     } else {
         let max = int_sqrt(n);
-        let mut is_prime = vec![true; n-1];
+        let mut is_prime = vec![true; n - 1];
 
         for i in 2..max {
             let mut it = is_prime[(i - 2)..].iter_mut().step_by(i);
